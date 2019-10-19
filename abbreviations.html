@@ -159,3 +159,91 @@ td[title="Hello world!" colspan=3] -->
 
 <td title="Hellow world!" colspan="3"></td>
 
+<!-- You don’t have to specify attribute values: td[colspan title] will produce <td colspan="" title=""> with tabstops inside each empty attribute (if your editor supports them). -->
+
+    <td colspan="" title=""></td>
+
+    <!-- You don’t need to quote values if they don’t contain spaces: td[title=hello colspan=3] will work. -->
+
+<td title="hello" colspan="3"></td>
+
+<!-- You can use single or double quotes for quoting attribute values.
+td[title='hello world']
+-->
+
+<td title="hello world"></td>
+
+<!-- ul>li.item$*5 -->
+
+<ul>
+    <li class="item1"></li>
+    <li class="item2"></li>
+    <li class="item3"></li>
+    <li class="item4"></li>
+    <li class="item5"></li>
+</ul>
+
+<!-- You can use multiple $ in a row to pad number with zeroes:
+
+ul>li.item$$$*5 -->
+
+<ul>
+    <li class="item001"></li>
+    <li class="item002"></li>
+    <li class="item003"></li>
+    <li class="item004"></li>
+    <li class="item005"></li>
+</ul>
+
+<!-- Changing numbering base and direction
+With @ modifier, you can change numbering direction (ascending or descending) and base (e.g. start value).
+
+For example, to change direction, add @- after $:
+
+ul>li.item$@-*5 Don't work in VS Code-->
+
+<ul>
+    <li class="item1@-"></li>
+    <li class="item2@-"></li>
+    <li class="item3@-"></li>
+    <li class="item4@-"></li>
+    <li class="item5@-"></li>
+</ul>
+
+<!-- ul>li.item$@3*5 -->
+<ul>
+    <li class="item3"></li>
+    <li class="item4"></li>
+    <li class="item5"></li>
+    <li class="item6"></li>
+    <li class="item7"></li>
+</ul>
+
+<!-- Text: {}
+You can use curly braces to add text to element:
+
+a{Click me} -->
+
+<a href="">Click me</a>
+
+<!-- Note that {text} is used and parsed as a separate element (like, div, p etc.) but has a special meaning when written right after element. For example, a{click} and a>{click} will produce the same output, but a{click}+b{here} and a>{click}+b{here} won’t: -->
+
+<!-- a{click}+b{here} -->
+<a href="">click</a><b>here</b>
+<a href="">click</a><b>here</b>
+<!-- a>{click}+b{here} -->
+<a href="">click<b>here</b></a>
+<a href="">click<b>here</b></a>
+<!-- p>{Click }+a{here}+{ to continue} -->
+<p>
+    Click 
+    <a href="">here</a>
+    to continue
+</p>
+<!-- p{Click }+a{here}+{ to continue} -->
+<p>Click </p>
+<a href="">here</a> to continue
+
+<!-- Abbreviations are not a template language, they don’t have to be “readable”, they have to be “quickly expandable and removable”.
+You don’t really need to write complex abbreviations. Stop thinking that “typing” is the slowest process in web-development. You’ll quickly find out that constructing a single complex abbreviation is much slower and error-prone than constructing and typing a few short ones. -->
+
