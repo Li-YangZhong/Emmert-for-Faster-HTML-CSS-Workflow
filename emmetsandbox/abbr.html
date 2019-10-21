@@ -52,52 +52,106 @@
 <!-- div>ul>li{List Item 1} -->
 
 
-
+<div>
+    <ul>
+        <li>List Item 1</li>
+    </ul>
+</div>
 
 <!-- MULTIPLICATION * -->
 
 <!-- ul#navigation>li*5>{List Item 1} -->
-
-
-
+<ul id="navigation">
+    <li>List Item 1</li>
+    <li>List Item 1</li>
+    <li>List Item 1</li>
+    <li>List Item 1</li>
+    <li>List Item 1</li>
+</ul>
+<!-- ul#navigation>li*5{List Item 1} -->
+<ul id="navigation">
+    <li>List Item 1</li>
+    <li>List Item 1</li>
+    <li>List Item 1</li>
+    <li>List Item 1</li>
+    <li>List Item 1</li>
+</ul>
+<!-- ul#navigation>li*5>{List Item $} -->
+<ul id="navigation">
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li>List Item 4</li>
+    <li>List Item 5</li>
+</ul>
 <!-- SIBLINGS + -->
 
 <!-- div+ul+li -->
-
+<div></div>
+<ul></ul>
+<li></li>
 <!-- h1.title+p.body -->
-
+<h1 class="title"></h1>
+<p class="body"></p>
 <!-- div>h1.title+p.body -->
-
+<div>
+    <h1 class="title"></h1>
+    <p class="body"></p>
+</div>
 
 <!-- GROUPIONG () -->
 
 <!-- div>(header>ul>li*2>a)+footer>p -->
+<div>
+    <header>
+        <li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </li>
+    </header>
+    <footer>
+        <p>Copyright 2017</p>
+    </footer>
+</div>
 
+<!-- (div>header>ul>li*2>a)+footer>p -->
+<div>
+    <header>
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </header>
+</div>
+<footer>
+    <p></p>
+</footer>
 
 <!-- ATTRIBUTES -->
-
+<a href=""></a>
 <!-- a[href="http://google.com" target="_blank"] -->
 
-
+<a href="http://google.com" target="_blank" title="Google"> </a>
 
 <!-- FORMS & INPUT -->
 
-<!-- form -->·
+<!-- form -->
+<form action=""></form>
 
 <!-- form:get -->
-
+<form action="" method="get"></form>
 <!-- form:post -->
-
+<form action="" method="post"></form>
 <!-- label -->
-
+<label for=""></label>
 <!-- input -->
-
+<input type="text">
 <!-- inp -->
-
+<input type="text" name="" id="">
 <!-- input:email -->
-
+<input type="email" name="" id="">
 <!-- input:s -->
-
+<input type="submit" value="">
 <!-- select -->
 <select name="" id=""></select>
 
