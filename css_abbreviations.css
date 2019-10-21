@@ -1,0 +1,26 @@
+.body {
+    margin: ;
+    margin: 10px;
+    /* Want multiple values? Use a hypen to separate them: m10-20 expands to margin: 10px 20px;. */
+    margin: 10px 20px;
+    margin: -10px -20px;
+    margin: -10px -20px;
+    margin: 10px -20px;
+    margin: 1.5em;
+    margin: 10foo;
+    margin: 10ex;
+    margin: 10px;
+    margin: 10%;
+    margin: 10em;
+    margin: 10% 30em 5ex;
+    
+    color: #111111;
+    color: #e0e0e0;
+    color: #ffcc00;
+    line-height: 2;
+    font-weight: 400;
+    padding:  !important;
+    padding:  !important;
+    margin: 10em !important;
+
+}
